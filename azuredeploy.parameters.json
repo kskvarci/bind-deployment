@@ -2,20 +2,21 @@
     "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-          "adminUsername": {
+          "vmName": {
               "value": "GEN-UNIQUE"
           },
-          "adminPassword": {
+          "adminUsername": {
               "value": "GEN-PASSWORD"
           },
-          "storageAccName": {
+          "sshKeyData": {
               "value": "GEN-UNIQUE"
-          }
-          ,
+          },
+          "forwardIP": {
+              "value": "GEN-UNIQUE"
+          },
           "vnetName": {
               "value": "GEN-UNIQUE"
-          }
-          ,
+          },
           "subnetName": {
               "value": "GEN-UNIQUE"
           }
