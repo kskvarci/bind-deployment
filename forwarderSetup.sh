@@ -9,7 +9,7 @@ yum install bind bind-utils -y
 # configure Bind9 for forwarding
 cat > named.conf << EndOFNamedConfOptions
 acl goodclients {
-    10.7.0.0/16;
+    10.1.0.0/16;
     localhost;
     localnets;
 };
@@ -24,7 +24,7 @@ options {
         };
         forward only;
 
-        dnssec-validation auto;
+        dnssec-validation no;
 
         auth-nxdomain no;    # conform to RFC1035
         listen-on { any; };
